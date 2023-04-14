@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="estilos.css" />
+        <title>Encriptador de textos JS</title>
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" width="60" height="60">
+                <span style="margin-left: 10px; font-weight: bold; font-size: 20px;">Desarrollado por Jonathan Rojas</span>
+            </div>
+        </header>
+        <div>
+            <div class="box-2">
+                <textarea
+                    id="textoUsuario"
+                    class="textarea textarea-color-1"
+                    rows="9"
+                    cols="32"
+                    placeholder="Ingrese Texto Aquí"
+                ></textarea>
+                <div
+                    class="inline-buttons .et_pb_button_module_wrapper inline-buttons"
+                >
+                    <button
+                        onclick="encriptar()"
+                        class="boton boton-posicion boton-color-1"
+                    >
+                        Encriptar
+                    </button>
+                    <button
+                        onclick="desencriptar()"
+                        class="boton boton-posicion boton-color-1"
+                    >
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <textarea
+                    id="textoProcesado"
+                    class="textarea textarea-color-2"
+                    rows="9"
+                    cols="20"
+                    placeholder="Ningún mensaje fue encontrado!"
+                    disabled
+                ></textarea>
+                <div class="tooltip">
+                    <button
+                        onclick="copiar()"
+                        class="boton boton-posicion boton-color-1 boton-copiar"
+                    >
+                        <span class="tooltiptext" id="myTooltip"
+                            >Copiar al portapapeles</span
+                        >
+                        Copiar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="funciones.js">
+        </script>
+    </body>
+</html>

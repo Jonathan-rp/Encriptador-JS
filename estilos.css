@@ -1,0 +1,139 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    background-color: #f3f5fc;
+}
+
+.divHeader{
+    display: flex;
+    align-items: center;
+}
+
+.textarea {
+    font-family: Inter;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    line-height: 150%;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    margin: 10px;
+    padding: 15px;
+    resize: none;
+}
+
+.textarea-color-1 {
+    color: #0a3871;
+    background-color: #f3f5fc;
+}
+
+.textarea-color-2 {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.boton {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 24px;
+}
+
+.boton-posicion {
+    position: relative;
+    margin: 10px;
+    left: 0;
+    top: 0;
+}
+
+.boton-copiar {
+    margin-left: 100px;
+}
+
+.boton-color-1 {
+    background-color: #0a3871;
+    color: #f3f5fc;
+}
+
+.inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inline-buttons {
+    text-align: center !important; /* cambia"Center" a "left" o "right" si quieres la que alineación sea a la izquierda o derecha */
+}
+
+.container {
+    justify-content: space-evenly;
+    column-gap: 100px;
+    row-gap: 10px;
+  }
+
+  .box {
+    position: absolute; 
+    left: 800px; 
+    top: 40px; 
+    width: 400px;
+    height: 600px; 
+    border-radius: 32px; 
+    background-color: #FFFFFF; 
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08); 
+  }
+
+  .box-2 {
+    position: absolute; 
+    left: 150px; 
+    top: 60px; 
+    width: 600px;
+    height: 580px; 
+    border-radius: 32px; 
+    background-color: #f3f5fc; 
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08); 
+  }
+
+
+  
+  
+
+  

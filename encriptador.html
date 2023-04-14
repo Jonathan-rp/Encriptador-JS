@@ -10,8 +10,19 @@
     <body>
         <header>
             <div class="divHeader">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" width="60" height="60">
-                <span style="margin-left: 10px; font-weight: bold; font-size: 20px;">Desarrollado por Jonathan Rojas</span>
+                <img
+                    src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png"
+                    width="60"
+                    height="60"
+                />
+                <span
+                    style="
+                        margin-left: 10px;
+                        font-weight: bold;
+                        font-size: 20px;
+                    "
+                    >Desarrollado por Jonathan Rojas</span
+                >
             </div>
         </header>
         <div>
@@ -28,15 +39,22 @@
                 >
                     <button
                         onclick="encriptar()"
-                        class="boton boton-posicion boton-color-1"
+                        class="button-pushable boton-posicion"
+                        role="button"
                     >
-                        Encriptar
+                        <span class="button-shadow"></span>
+                        <span class="button-edge"></span>
+                        <span class="button-front text"> Encriptar </span>
                     </button>
+
                     <button
                         onclick="desencriptar()"
-                        class="boton boton-posicion boton-color-1"
+                        class="button-pushable boton-posicion"
+                        role="button"
                     >
-                        Desencriptar
+                        <span class="button-shadow"></span>
+                        <span class="button-edge"></span>
+                        <span class="button-front text"> Desencriptar </span>
                     </button>
                 </div>
             </div>
@@ -52,18 +70,20 @@
                 <div class="tooltip">
                     <button
                         onclick="copiar()"
-                        class="boton boton-posicion boton-color-1 boton-copiar"
+                        class="button-pushable boton-copiar boton-posicion"
+                        role="button"
                     >
+                        <span class="button-shadow"></span>
+                        <span class="button-edge"></span>
                         <span class="tooltiptext" id="myTooltip"
                             >Copiar al portapapeles</span
                         >
-                        Copiar
+                        <span class="button-front text"> Copiar </span>
                     </button>
                 </div>
             </div>
         </div>
 
-        <script src="funciones.js">
-        </script>
+        <script src="funciones.js"></script>
     </body>
 </html>
